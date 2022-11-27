@@ -4,7 +4,6 @@ class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         idx = 0
         sortedIntervals = sorted(intervals, key = lambda x: x[0])
-        print(sortedIntervals)
         while True:
             if len(sortedIntervals[idx:]) < 2:
                 break
